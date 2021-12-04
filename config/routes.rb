@@ -11,5 +11,6 @@ Rails.application.routes.draw do
 
     # この行を追加する
     resources :likes, only: %i(create destroy)
+    resources :comments, only: %i(create destroy)
   end
 end

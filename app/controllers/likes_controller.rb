@@ -21,7 +21,8 @@ class LikesController < ApplicationController
   # ==========ここまで追加する==========
 
   private
-    def like_params
-      params.permit(:post_id)
-    end
+
+  def like_params
+    params.permit(:post_id)
+  end
 end
